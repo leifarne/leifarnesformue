@@ -6,7 +6,7 @@ function dutt() {
 
 var url = "https://formue.azurewebsites.net/api/HttpTriggerJS1?code=AXeaHTx6U6y6GjekOgGjZI0GJ0w7Al3HaYeojJaooVwQt85rrSQXTA==&name=yy";
 
-var stocks = 7712;
+var stocks = 100;
 
 function loadDoc() {
     var xhttp = new XMLHttpRequest();
