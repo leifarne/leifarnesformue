@@ -1,5 +1,69 @@
+
 <html>
-<body>
-Formuen.
-</body
-</html
+	<head>
+	</head>
+
+	<script src="main.js"></script>
+	
+	<style>
+		table, th, td {
+			border-collapse: collapse;
+		}
+		table { 
+			background-color: ghostwhite;
+			font-family: sans-serif;
+		}
+		tr { border-bottom: 1px solid gray}
+		
+		th, td { 
+			padding-left: 5px;
+			padding-right: 5px 
+		}
+		.n { 
+			text-align: right;
+		}
+		.change { color: green;  }
+		.symbol { color: darkblue }
+		.text { 
+			font-family: sans-serif; 
+			font-size: 18px;
+		}
+		
+	</style>
+	
+	<body>
+		<div class="text">Leif-Arnes 7.712 ACN-aksjer.</div>
+		
+		<p></p>
+		<table >
+			<tr>
+				<th>Symbol</th>
+				<th>Price</th>
+				<th>Change</th>
+			</tr>
+			<tr>
+				<td class="symbol">ACN</td>
+				<td class="n" id="acn-price">...</td>
+				<td class="n change" id="acn-change">...</td>
+			</tr>
+			<tr>
+				<td class="symbol">NOK=X</td>
+				<td class="n" id="usd-price">...</td>
+				<td class="n change" id="usd-change">...</td>
+			</tr>
+			<tr>
+				<td class="symbol">Total</td>
+				<td class="n" id="total-price">...</td>
+				<td class="n change" id="total-change">...</td>
+			</tr>
+		</table>
+
+		<p></p>
+		
+		<button type="button" onclick="loadDoc()"> Buttong </button>
+
+		<p></p>
+		<div id="demo"> ... </div>
+		
+	</body>
+</html>
